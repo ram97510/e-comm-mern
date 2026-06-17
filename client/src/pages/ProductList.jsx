@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import ProductModal from "../components/ProductModal";
-import "../styles/Product.css";
+import "../styles/product.css";
 import { getProducts } from "../api/productApi";
 
 
@@ -12,18 +12,18 @@ function ProductList() {
   const perPage = 6;
 
   useEffect(() => {
-  loadProducts();
-}, []);
+    loadProducts();
+  }, []);
 
 
   const loadProducts = async () => {
-  try {
-    const data = await getProducts();
-    setProducts(data);
-  } catch (error) {
-    console.log(error);
-  }
-};
+    try {
+      const data = await getProducts();
+      setProducts(data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   const start = (page - 1) * perPage;
   const items = products.slice(
