@@ -1,4 +1,4 @@
-# Conceps Backend - Express API
+# E-Commerce server - Express API
 
 A beginner-friendly Express.js API with MongoDB, JWT authentication, and clear code comments.
 
