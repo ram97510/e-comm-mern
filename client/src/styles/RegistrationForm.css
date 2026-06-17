@@ -1,0 +1,28 @@
+body {
+  background: #ffffff;
+}
+
+.registration-container {
+  width: 100%;
+  padding: 30px;
+  background: #ffffff;
+}
+
+h2 {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.form-control,
+.form-select {
+  height: 45px;
+}
+
+textarea.form-control {
+  height: auto;
+}
+
+.btn-primary {
+  min-width: 150px;
+  height: 45px;
+}

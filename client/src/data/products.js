@@ -1,0 +1,135 @@
+
+const products = [
+  {
+    id: 1,
+    name: "Cloud Shift Lightweight Runner Pro Edition",
+    description: "Lightweight and stylish, these sneakers offer all-day comfort with breathable mesh, cushioned soles, and a durable grip.",
+    price: 99.00,
+    oldPrice: 140.00,
+    discount: 40,
+    rating: 5.0,
+    category: "Sneakers",
+    sku: "SH-001-BLK-42",
+    availability: "In Stock",
+    image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    id: 2,
+    name: "Titan Edge High Impact Stability Lightweight Trainers",
+    description: "Built for stability and high-impact movements with reinforced ankle support.",
+    price: 65.99,
+    oldPrice: null,
+    discount: null,
+    rating: 3.5,
+    category: "Trainers",
+    sku: "TR-002-GRY-10",
+    availability: "In Stock",
+    image: "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    id: 3,
+    name: "Urban Trekker All-Terrain Boots",
+    description: "Water-resistant leather boots designed for city streets and light hiking trails.",
+    price: 129.50,
+    oldPrice: 150.00,
+    discount: 15,
+    rating: 4.5,
+    category: "Boots",
+    sku: "BT-003-BRN-44",
+    availability: "In Stock",
+    image: "https://images.unsplash.com/photo-1512374382149-233c42b6a83b?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    id: 4,
+    name: "Velocity Pro Sprint Shoes",
+    description: "Aerodynamic design for competitive runners seeking maximum speed and energy return.",
+    price: 189.99,
+    oldPrice: 210.00,
+    discount: 10,
+    rating: 4.8,
+    category: "Running",
+    sku: "RN-004-WHT-41",
+    availability: "Low Stock",
+    image: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRTWhHP41BUiJvdkMeWI8pTtUq7kjTlS34iyon9XOY9Ozj9g2shFKyyNPpcck_qwzcnw2yvz91NhkphBCrwl_5KEGeBI16rtIPj8hLZCd0ulUISMuBhH_E_tRtp7aFP5-Ugt3bOyCI&usqp=CAc"
+  },
+  {
+    id: 5,
+    name: "Comfort Step Slip-On Loafers",
+    description: "Easy to wear, easy to go. Memory foam insole for maximum relaxation.",
+    price: 45.00,
+    oldPrice: null,
+    discount: null,
+    rating: 4.0,
+    category: "Casual",
+    sku: "LS-005-NVY-43",
+    availability: "In Stock",
+    image: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    id: 6,
+    name: "Night Runner LED Glow Sneakers",
+    description: "Reflective materials and LED accents for visibility during night runs.",
+    price: 85.00,
+    oldPrice: 100.00,
+    discount: 15,
+    rating: 4.2,
+    category: "Sneakers",
+    sku: "SH-006-GLD-40",
+    availability: "In Stock",
+    image: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    id: 7,
+    name: "Eco-Friendly Canvas Kicks",
+    description: "Made from 100% recycled materials. Sustainable style without compromising comfort.",
+    price: 55.00,
+    oldPrice: null,
+    discount: null,
+    rating: 4.6,
+    category: "Casual",
+    sku: "EC-007-GRN-42",
+    availability: "In Stock",
+    image: "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    id: 8,
+    name: "Winter Grip Insulated Boots",
+    description: "Thermal lining and anti-slip soles to keep you warm and safe on icy surfaces.",
+    price: 110.00,
+    oldPrice: 135.00,
+    discount: 20,
+    rating: 4.7,
+    category: "Boots",
+    sku: "BT-008-BLK-45",
+    availability: "In Stock",
+    image: "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    id: 9,
+    name: "Summer Breeze Breathable Sandals",
+    description: "Open design for airflow, perfect for hot summer days and beach walks.",
+    price: 35.00,
+    oldPrice: 50.00,
+    discount: 30,
+    rating: 3.8,
+    category: "Sandals",
+    sku: "SD-009-BLU-41",
+    availability: "Out of Stock",
+    image: "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    id: 10,
+    name: "Court Classic Basketball Shoes",
+    description: "High-top support and durable rubber outsole for intense court action.",
+    price: 120.00,
+    oldPrice: 145.00,
+    discount: 17,
+    rating: 4.9,
+    category: "Trainers",
+    sku: "TR-010-RED-44",
+    availability: "In Stock",
+    image: "https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=600&q=80"
+  }
+];
+
+export default products;

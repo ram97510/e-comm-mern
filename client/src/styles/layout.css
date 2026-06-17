@@ -1,0 +1,136 @@
+/* App Layout Styles */
+.app-layout-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+}
+
+.app-layout-main {
+  flex: 1;
+  padding: 20px 24px 0 24px;
+  overflow-x: hidden;
+  margin-left: 260px;
+  background-color: white;
+}
+
+.app-layout-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.app-layout-header-left h1 {
+  font-size: 1.5rem;
+  color: var(--text-main);
+  margin: 0;
+}
+
+.app-layout-header-left p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* Profile Dropdown Styles */
+.app-profile-dropdown {
+  position: relative;
+}
+
+.app-profile-icon-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: rgb(101 101 101);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.app-profile-icon-btn:hover {
+  background-color: #505050;
+}
+
+.app-caret-icon {
+  font-size: 0.8rem;
+  transition: transform 0.3s ease;
+}
+
+.app-caret-icon.open {
+  transform: rotate(180deg);
+}
+
+.app-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  background: var(--card-bg);
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  min-width: 160px;
+  overflow: hidden;
+  z-index: 1000;
+  animation: appDropdownFadeIn 0.2s ease;
+}
+
+@keyframes appDropdownFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.app-dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 12px 16px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 0.95rem;
+  color: var(--text-main);
+  transition: background-color 0.2s ease;
+  text-align: left;
+}
+
+.app-dropdown-item:hover {
+  background-color: rgba(62, 151, 255, 0.1);
+}
+
+.app-dropdown-item.app-theme-btn {
+  color: var(--text-main);
+}
+
+.app-dropdown-item.app-logout-btn {
+  color: #dc3545;
+}
+
+.app-dropdown-item.app-logout-btn:hover {
+  background-color: rgba(220, 53, 69, 0.1);
+}
+
+/* Dark Mode Support is handled by theme.css */
+
+/* Responsive */
+@media (max-width: 768px) {
+  .app-layout-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .app-layout-main {
+    margin-left: 0;
+    padding: 20px;
+  }
+}

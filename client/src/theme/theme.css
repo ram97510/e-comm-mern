@@ -1,0 +1,617 @@
+/* ===================================
+   CSS Custom Properties (Light Mode)
+   =================================== */
+:root {
+  --bg-color: #f4f6f9;
+  --bg-secondary: #f8f9fa;
+  --card-bg: #ffffff;
+  --card-hover-shadow: rgba(0, 0, 0, 0.08);
+  --text-color: #111827;
+  --text-main: #111827;
+  --text-muted: #6b7280;
+  --text-secondary: #7e8299;
+  --border-color: #e4e6ef;
+  --input-bg: #ffffff;
+  --input-border: #ced4da;
+  --sidebar-bg: #ffffff;
+  --sidebar-border: #d8d8d8;
+  --sidebar-link-color: #666;
+  --sidebar-hover-bg: #f3f4f6;
+  --sidebar-hover-color: #111;
+  --sidebar-active-bg: #f3f4f6;
+  --sidebar-active-color: #111;
+  --table-hover-bg: #f8f9fa;
+  --table-border: #e4e6ef;
+  --modal-bg: #ffffff;
+  --dropdown-bg: #ffffff;
+  --auth-bg: #f5f8fa;
+  --auth-card-bg: #ffffff;
+  --auth-title-color: #181c32;
+  --auth-subtitle-color: #7e8299;
+  --form-label-color: #3f4254;
+  --page-link-bg: #ffffff;
+  --page-link-color: #2563eb;
+  --page-link-border: #dee2e6;
+  --mobile-menu-bg: #ffffff;
+}
+
+/* ===================================
+   Light theme class
+   =================================== */
+.light {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* ===================================
+   Dark Mode Custom Properties
+   =================================== */
+.dark {
+  --bg-color: #111827;
+  --bg-secondary: #1f2937;
+  --card-bg: #1f2937;
+  --card-hover-shadow: rgba(0, 0, 0, 0.3);
+  --text-color: #e5e7eb;
+  --text-main: #e5e7eb;
+  --text-muted: #9ca3af;
+  --text-secondary: #9ca3af;
+  --border-color: #374151;
+  --input-bg: #374151;
+  --input-border: #4b5563;
+  --sidebar-bg: #1f2937;
+  --sidebar-border: #374151;
+  --sidebar-link-color: #9ca3af;
+  --sidebar-hover-bg: #374151;
+  --sidebar-hover-color: #e5e7eb;
+  --sidebar-active-bg: #374151;
+  --sidebar-active-color: #e5e7eb;
+  --table-hover-bg: #374151;
+  --table-border: #374151;
+  --modal-bg: #1f2937;
+  --dropdown-bg: #1f2937;
+  --auth-bg: #111827;
+  --auth-card-bg: #1f2937;
+  --auth-title-color: #f3f4f6;
+  --auth-subtitle-color: #9ca3af;
+  --form-label-color: #d1d5db;
+  --page-link-bg: #374151;
+  --page-link-color: #93bcff;
+  --page-link-border: #4b5563;
+  --mobile-menu-bg: #1f2937;
+
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* ===================================
+   Body / Global Dark Overrides
+   =================================== */
+.dark body,
+.dark .container-fluid,
+.dark .container {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* ===================================
+   Card System
+   =================================== */
+.dark .card {
+  background: var(--card-bg);
+  border-color: var(--border-color);
+  color: var(--text-color);
+}
+
+.dark .card:hover {
+  box-shadow: 0 0 30px var(--card-hover-shadow);
+}
+
+.dark .card-body {
+  color: var(--text-color);
+}
+
+.dark .card-header {
+  background: var(--card-bg) !important;
+  border-bottom-color: var(--border-color);
+  color: var(--text-color);
+}
+
+.dark .card-footer {
+  background: var(--card-bg) !important;
+  border-top-color: var(--border-color);
+  color: var(--text-color);
+}
+
+.dark .card-title {
+  color: var(--text-color);
+}
+
+/* ===================================
+   Typography
+   =================================== */
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6 {
+  color: var(--text-color);
+  background: transparent;
+}
+
+.dark p {
+  color: var(--text-color);
+}
+
+.dark span {
+  color: inherit;
+}
+
+.dark strong {
+  color: var(--text-color);
+}
+
+.dark .text-muted {
+  color: var(--text-muted) !important;
+}
+
+.dark .text-dark {
+  color: var(--text-color) !important;
+}
+
+.dark .fw-bold {
+  color: var(--text-color);
+}
+
+/* ===================================
+   Sidebar
+   =================================== */
+.dark .sidebar {
+  background: var(--sidebar-bg);
+  border-right-color: var(--sidebar-border);
+  color: var(--text-color);
+}
+
+.dark .sidebar-logo h2 {
+  color: var(--text-color);
+  background: transparent;
+}
+
+.dark .sidebar-links a {
+  color: var(--sidebar-link-color);
+}
+
+.dark .sidebar-links a:hover {
+  background: var(--sidebar-hover-bg);
+  color: var(--sidebar-hover-color);
+}
+
+.dark .sidebar-links a.active {
+  background: var(--sidebar-active-bg);
+  color: var(--sidebar-active-color);
+  font-weight: 600;
+}
+
+.dark .mobile-menu-icon {
+  background: var(--mobile-menu-bg);
+  color: var(--text-color);
+}
+
+.dark .sidebar-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* ===================================
+   Form Controls (inputs, selects, textareas)
+   =================================== */
+.dark input,
+.dark .form-control {
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  border-color: var(--input-border);
+}
+
+.dark input::placeholder,
+.dark .form-control::placeholder {
+  color: var(--text-muted);
+}
+
+.dark input:focus,
+.dark .form-control:focus {
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 0.2rem rgba(59, 130, 246, 0.25);
+}
+
+.dark select,
+.dark .form-select {
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  border-color: var(--input-border);
+}
+
+.dark .form-select:focus {
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 0.2rem rgba(59, 130, 246, 0.25);
+}
+
+.dark textarea,
+.dark textarea.form-control {
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  border-color: var(--input-border);
+}
+
+.dark .form-label {
+  color: var(--form-label-color);
+}
+
+.dark .form-check-label {
+  color: var(--text-color);
+}
+
+.dark label {
+  color: var(--form-label-color);
+}
+
+/* ===================================
+   Auth Pages (SignIn, SignUp, OTP)
+   =================================== */
+.dark .auth-page {
+  background: var(--auth-bg);
+}
+
+.dark .auth-card {
+  background: var(--auth-card-bg);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+.dark .auth-title {
+  color: var(--auth-title-color);
+}
+
+.dark .auth-subtitle {
+  color: var(--auth-subtitle-color);
+}
+
+.dark .auth-link {
+  color: #60a5fa;
+}
+
+.dark .auth-link:hover {
+  color: #93bbfd;
+}
+
+.dark .otp-box {
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  border-color: var(--input-border);
+}
+
+/* ===================================
+   Dashboard
+   =================================== */
+.dark .dashboard-grid {
+  background: var(--card-bg);
+  color: var(--text-color);
+  border-color: var(--border-color);
+}
+
+.dark .stat-card {
+  background: var(--card-bg);
+  color: var(--text-color);
+  border-color: var(--border-color);
+}
+
+.dark .main-content {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+.dark .promo-banner {
+  background: var(--card-bg);
+  color: var(--text-color);
+  border-color: var(--border-color);
+}
+
+.dark .promo-content {
+  background: var(--card-bg);
+  color: var(--text-color);
+}
+
+.dark .social-grid {
+  background: var(--card-bg);
+  color: var(--text-color);
+}
+
+.dark .dashboard-image {
+  background: rgba(54, 153, 255, 0.15);
+}
+
+.dark .header-left h1 {
+  color: var(--text-color);
+}
+
+/* ===================================
+   Table & List Page
+   =================================== */
+.dark .table-container {
+  background: var(--card-bg);
+  color: var(--text-color);
+}
+
+.dark .table {
+  color: var(--text-color);
+  --bs-table-bg: transparent;
+}
+
+.dark .table thead {
+  color: var(--text-muted);
+}
+
+.dark .table thead th {
+  color: var(--text-muted);
+  border-bottom-color: var(--border-color);
+  background-color: #000000 !important;
+}
+
+.dark .table tbody tr {
+  color: var(--text-color);
+  border-color: var(--border-color);
+}
+
+.dark .table tbody tr:hover {
+  background: var(--table-hover-bg);
+}
+
+.dark .table-row-dashed tbody tr {
+  border-bottom-color: var(--table-border);
+}
+
+.dark .border-bottom {
+  border-bottom-color: var(--border-color) !important;
+}
+
+/* ===================================
+   Pagination
+   =================================== */
+.dark .pagination .page-link {
+  background-color: var(--page-link-bg);
+  color: var(--page-link-color);
+  border-color: var(--page-link-border);
+}
+
+.dark .pagination .page-link:hover {
+  background-color: #4b5563;
+  color: #ffffff;
+  border-color: #4b5563;
+}
+
+.dark .pagination .page-item.active .page-link {
+  background-color: #2563eb;
+  border-color: #2563eb;
+  color: #ffffff;
+}
+
+.dark .pagination .page-item.disabled .page-link {
+  background-color: var(--input-bg);
+  color: var(--text-muted);
+  border-color: var(--page-link-border);
+}
+
+/* ===================================
+   Product Cards
+   =================================== */
+.dark .product-card {
+  background: var(--card-bg);
+  color: var(--text-color);
+}
+
+/* ===================================
+   Modal / Drawer
+   =================================== */
+.dark .modal-overlay {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.dark .modal-drawer {
+  background: var(--modal-bg);
+  color: var(--text-color);
+}
+
+.dark .modal-drawer h3 {
+  color: var(--text-color);
+}
+
+.dark .modal-drawer .description {
+  color: var(--text-muted);
+}
+
+.dark .modal-drawer .specs {
+  color: var(--text-color);
+}
+
+.dark .modal-drawer .spec-item span {
+  color: var(--text-muted);
+}
+
+.dark .modal-drawer .old-price {
+  color: var(--text-muted);
+}
+
+.dark .modal-drawer .breadcrumb {
+  color: var(--text-muted);
+}
+
+.dark .close-x {
+  color: var(--text-color);
+  background: transparent;
+}
+
+/* ===================================
+   Buttons
+   =================================== */
+.dark .btn-outline-primary {
+  color: #60a5fa;
+  border-color: #60a5fa;
+}
+
+.dark .btn-outline-primary:hover {
+  background-color: #2563eb;
+  border-color: #2563eb;
+  color: #ffffff;
+}
+
+.dark .btn-outline-primary:disabled {
+  color: var(--text-muted);
+  border-color: var(--input-border);
+}
+
+/* ===================================
+   Bootstrap Utility Overrides
+   =================================== */
+.dark .bg-white {
+  background-color: var(--card-bg) !important;
+}
+
+.dark .bg-light {
+  background-color: var(--bg-secondary) !important;
+}
+
+.dark .shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.3) !important;
+}
+
+.dark .shadow {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4) !important;
+}
+
+/* ===================================
+   Toggle Button
+   =================================== */
+.dark .toggle {
+  background: transparent;
+  color: var(--text-color);
+  border: none;
+}
+
+/* ===================================
+   Profile Dropdown (in layout)
+   =================================== */
+.dark .app-dropdown-menu {
+  background: var(--dropdown-bg);
+}
+
+.dark .app-dropdown-item {
+  color: var(--text-color);
+}
+
+.dark .app-dropdown-item:hover {
+  background-color: rgba(62, 151, 255, 0.2);
+}
+
+.dark .app-dropdown-item.app-theme-btn {
+  color: var(--text-color);
+}
+
+.dark .app-profile-icon-btn {
+  background-color: #374151;
+}
+
+.dark .app-profile-icon-btn:hover {
+  background-color: #4b5563;
+}
+
+/* ===================================
+   Layout
+   =================================== */
+.dark .app-layout-container {
+  background-color: var(--bg-color);
+}
+
+.dark .app-layout-main {
+  background: var(--bg-color);
+}
+
+.dark .app-layout-header-left h1 {
+  color: var(--text-color);
+}
+
+.dark .app-layout-header-left p {
+  color: var(--text-muted);
+}
+
+/* ===================================
+   Registration Form
+   =================================== */
+.dark .form-check-input {
+  background-color: var(--input-bg);
+  border-color: var(--input-border);
+}
+
+.dark .form-check-input:checked {
+  background-color: #2563eb;
+  border-color: #2563eb;
+}
+
+/* ===================================
+   User Name / Dept Name
+   =================================== */
+.dark .user-name,
+.dark .dept-name {
+  color: #aab7fb;
+}
+
+/* ===================================
+   Scrollbar (optional polish)
+   =================================== */
+.dark ::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 4px;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+/* ===================================
+   Social Button (if present)
+   =================================== */
+.dark .social-btn {
+  background: var(--card-bg);
+  color: var(--text-color);
+}
+
+/* ===================================
+   Signup container/card (if present)
+   =================================== */
+.dark .signup-container {
+  background: var(--card-bg);
+  color: var(--text-color);
+}
+
+.dark .signup-card {
+  background: var(--card-bg);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+}
+
+/* ===================================
+   Auth Container (if present)
+   =================================== */
+.dark .auth-container {
+  background: var(--card-bg);
+  color: var(--text-color);
+}

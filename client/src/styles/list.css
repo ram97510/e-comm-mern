@@ -1,0 +1,27 @@
+.card {
+  border-radius: 12px;
+}
+
+.table-row-dashed tbody tr {
+  border-bottom: 1px dashed var(--table-border, #e4e6ef);
+}
+
+.table thead th {
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.table tbody tr:hover {
+  background: var(--table-hover-bg, #f8f9fa);
+}
+
+.badge {
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.pagination .page-link {
+  border-radius: 6px;
+  margin: 0 2px;
+}
